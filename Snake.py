@@ -45,6 +45,8 @@ buckTeeth = pygame.image.load('BuckTeeth.png')
 scaledBuckTeeth = pygame.transform.scale(buckTeeth, (playerDiameter, playerDiameter))
 bookPNG = pygame.image.load('Book.png')
 scaledBook = pygame.transform.scale(bookPNG, (playerDiameter, playerDiameter))
+library = pygame.image.load("Library.jpg")
+scaledLibrary = pygame.transform.scale(library, (sWidth,sHeight))
 
 ##Head of the players starting point
 initPlayerX = 300 - 10 + 4 * playerDiameter
@@ -178,6 +180,7 @@ while gameRunning:
     ##Menu
     if gameState == "Menu":
         screen.fill(black)
+        screen.blit(scaledLibrary, (0,0))
         drawMenu(title,font,screen,playRect,sWidth)
         pygame.display.update()
 
