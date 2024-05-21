@@ -1,5 +1,5 @@
 Game
 
-Press whtie button to play
+Press white button to play
 
 WASD to move
